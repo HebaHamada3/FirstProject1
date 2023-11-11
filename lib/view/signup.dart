@@ -42,17 +42,17 @@ class SignUpScreen extends StatelessWidget {
               children: <Widget>[
                 const SizedBox(height: 120.0),
                 CustomTextField(
-                    labelText: 'Full Name', controller: _fullnameController),
+                    labelText: 'Full Name', controller: _fullnameController, obscureText: false,),
                 const SizedBox(height: 15.0),
                 CustomTextField(
-                    labelText: 'Email', controller: _emailController),
+                    labelText: 'Email', controller: _emailController, obscureText: false,),
                 const SizedBox(height: 15.0),
                 CustomTextField(
-                    labelText: 'Password', controller: _passwordController),
+                    labelText: 'Password', controller: _passwordController, obscureText: true,),
                 const SizedBox(height: 15.0),
                 CustomTextField(
                     labelText: 'Comfirm Password',
-                    controller: _comfirmpasswordController),
+                    controller: _comfirmpasswordController, obscureText: false,),
                 const SizedBox(height: 20.0),
                 // ElevatedButton(
                 //   onPressed: () {

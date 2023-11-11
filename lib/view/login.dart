@@ -38,10 +38,10 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomTextField(
-                    labelText: 'Username', controller: _usernameController),
+                    labelText: 'Username', controller: _usernameController, obscureText: false,),
                 const SizedBox(height: 15.0),
                 CustomTextField(
-                    labelText: 'Password', controller: _passwordController),
+                   labelText: 'Password', controller: _passwordController, obscureText:true,),
                 const SizedBox(height: 40.0),
                 CustomButton(
                   text: "Login",

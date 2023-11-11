@@ -2,7 +2,6 @@ import 'package:firstproject1/view/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class Register extends StatelessWidget {
   const Register({super.key});
 
@@ -31,7 +30,12 @@ class Register extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(width: 50.0),
+            const CircleAvatar(
+              radius: 110,
+              backgroundImage: AssetImage('assets/animated icon.gif'),
+
+            ),
+            const SizedBox(height: 80.0),
             CustomButton(
               text: "Login",
               onTap: () {
